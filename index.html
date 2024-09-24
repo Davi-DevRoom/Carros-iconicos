@@ -12,7 +12,7 @@
     <title>Carros</title>
 </head>
 <body>
-    <nav class="menu js-menu">
+    <nav class="menu" data-menu="smooth">
         <ul>
             <li><a href="#Carros">Carros</a></li>
             <li><a href="#Faq">Faq</a></li>
@@ -21,16 +21,16 @@
         </ul>
     </nav>
 
-    <section class="grid-section cars js-scroll" id="Carros">
+    <section class="grid-section cars" data-anime="scroll" id="Carros">
         <h1 class="titulo">Carros</h1>
-        <ul class="cars-list js-tabmenu">
+        <ul class="cars-list" data-tab="menu">
             <li><img src="img/Mustang-69.jpg" alt=""></li>
             <li><img src="img/Porsche.jpg" alt=""></li>
             <li><img src="img/Bugatti.jpg" alt=""></li>
             <li><img src="img/BMW.jpg" alt=""></li>
         </ul>
-        <div class="cars-descri js-tabcontent">
-            <section>
+        <div class="cars-descri" data-tab="content">
+            <section data-anime="show-right">
                 <h2>Mustang-1969</h2>
                 <p>
                     A primeira geração do Ford Mustang foi fabricada pela Ford de março de 1964 até 1973. A introdução do Mustang criou uma nova classe de automóveis conhecidos como pony cars . O estilo do Mustang, com seu capô longo e deck curto, provou ser extremamente popular e inspirou uma série de competições.
@@ -43,7 +43,7 @@
                 </p>
             </section>
 
-            <section>
+            <section data-anime="show-down">
                 <h2>Porsche</h2>
                 <p>
                     A marca alemã Porsche foi fundada em 1931 por Ferdinand Porsche e seu filho Ferry Porsche. Ferdinand Porsche já era conhecido antes de fundar a Porsche, ele havia trabalhado para outras marcas. Havia também lançado em 1900 o primeiro automóvel híbrido.
@@ -56,7 +56,7 @@
                 </p>
             </section>
 
-            <section>
+            <section data-anime="show-right">
                 <h2>Bugatti</h2>
                 <p>
                     Automobiles Ettore Bugatti foi um fabricante alemão e depois francês de automóveis de alto desempenho. A empresa foi fundada em 1909 na então cidade alemã de Molsheim, na Alsácia, pelo designer industrial italiano Ettore Bugatti. Os carros eram conhecidos por sua beleza de design e por suas muitas vitórias em corridas. Os famosos automóveis Bugatti incluem os carros Type 35 Grand Prix , o Type 41 "Royale" , o Type 57 "Atlantic" e o Type 55 sport car.
@@ -69,7 +69,7 @@
                 </p>
             </section>
 
-            <section>
+            <section data-anime="show-down">
                 <h2>BMW</h2>
                 <p>
                     Bayerische Motoren Werke (em português: Fábrica de Motores da Baviera; conhecida simplesmente como BMW) é uma empresa automobilística alemã, fabricante de motocicletas e automóveis de luxo, sediada na Baviera, Alemanha.[1] A BMW desenvolve, fabrica e comercializa seus automóveis sob as marcas BMW, Mini e Rolls-Royce, e as motocicletas sob a marca BMW Motorrad.
@@ -84,9 +84,9 @@
         </div>
     </section>
 
-    <section class="grid-section js-scroll" id="Faq">
+    <section class="grid-section" data-anime="scroll" id="Faq">
         <h1 class="titulo">Duvidas</h1>
-        <dl class="faq-lista js-accordion">
+        <dl class="faq-lista" data-anime="accordion">
             <dt>Qual o modelo do Mustang?</dt>
             <dd>
                 O modelo é um Boss 302, Ford Mustang 1969.
@@ -109,7 +109,7 @@
         </dl>
     </section>
 
-    <section class="grid-section js-scroll" id="Contato">
+    <section class="grid-section" data-anime="scroll"  id="Contato">
         <h1 class="titulo">Contato</h1>
         <div class="mapa">
             <img src="img/mapa.png">
