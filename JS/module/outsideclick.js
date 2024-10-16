@@ -12,13 +12,13 @@ export default function outsideClick(element, events, callback){
     }
 
     function handleOutsideClick(event){
-    if(!element.contains(event.target)){
-        element.removeAttribute(outside);
-        events.forEach(userEvent => {
-            html.removeEventListener('click', handleOutsideClick);
-        })
-        callback();
-    }
+        if(!element.contains(event.target)){
+            element.removeAttribute(outside);
+            events.forEach(userEvent => {
+                html.removeEventListener(userEvent, handleOutsideClick);
+            })
+            callback();
+        }
     }
     
 }
